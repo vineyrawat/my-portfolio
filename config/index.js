@@ -1,14 +1,13 @@
 module.exports = {
   //-- SITE SETTINGS -----
-  author: "@konstantinmuenster",
-  siteTitle: "Gatsby Starter Portfolio Minimal",
-  siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
-  siteDescription:
-    "A modern one-page portfolio with a clean yet expressive design.",
-  siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+  author: "@vineyrawat",
+  siteTitle: "Vinaybyte.in",
+  siteShortTitle: "VinayByte.in", // Used as logo text in header, footer, and splash screen
+  siteDescription: "VinayByte.in",
+  siteUrl: "https://vinaybyte.in",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
-  seoTitleSuffix: "Portfolio Minimal", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
+  seoTitleSuffix: "VinayByte.in", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
   useCookieBar: false, // If you use Google Analytics and want to be GDPR-compliant, set it to true
   googleAnalyticsTrackingId: "", // e.g. UA-XXXXXX-X
 
@@ -40,14 +39,14 @@ module.exports = {
     },
   },
   fonts: {
-    primary: "Roboto, Arial, sans-serif",
+    primary: "Lora, Arial, sans-serif",
   },
 
   //-- ARTICLES SECTION SETTINGS -----
   // You can create your own Medium feed with this rss to json converter: https://rss2json.com/
   // To access your Medium RSS feed, just replace this url with your username: https://medium.com/feed/@{yourname}
-  mediumRssFeed:
-    "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40konstantinmuenster",
+  mediumRssFeed: "",
+  // "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40konstantinmuenster",
   // rssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss",
 
   shownArticles: 3,
@@ -58,21 +57,20 @@ module.exports = {
   socialMedia: [
     {
       name: "Linkedin",
-      url: "https://www.linkedin.com/in/konstantin-muenster/",
+      url: "https://www.linkedin.com/in/vineyrawat/",
     },
-    {
-      name: "Medium",
-      url: "https://konstantinmuenster.medium.com/",
-    },
+    // {
+    //   name: "Medium",
+    //   url: "https://konstantinmuenster.medium.com/",
+    // },
     {
       name: "Github",
-      url:
-        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
+      url: "https://github.com/vineyrawat",
     },
-    {
-      name: "Behance",
-      url: "https://www.behance.net/konstanmnster",
-    },
+    // {
+    //   name: "Behance",
+    //   url: "https://www.behance.net/konstanmnster",
+    // },
     // {
     //   name: "Mail",
     //   url: "mailto:mail@konstantin.digital",
@@ -82,34 +80,35 @@ module.exports = {
   //-- NAVIGATION SETTINGS -----
   navLinks: {
     menu: [
-      {
-        name: "About Me",
-        url: "/#about",
-      },
-      {
-        name: "Features",
-        url: "/#projects",
-      },
-      {
-        name: "Contact",
-        url: "/#contact",
-      },
+      {},
+      // {
+      //   name: "About Me",
+      //   url: "/#about",
+      // },
+      // {
+      //   name: "Features",
+      //   url: "/#projects",
+      // },
+      // {
+      //   name: "Contact",
+      //   url: "/#contact",
+      // },
     ],
     button: {
       useFileName: true,
       name: "Resume",
-      fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
+      fileName: "resume.pdf", // the file has to be placed inside the static folder at the root level
       url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
   footerLinks: [
-    {
-      name: "Privacy",
-      url: "/privacy",
-    },
-    {
-      name: "Imprint",
-      url: "/imprint",
-    },
+    // {
+    //   name: "Privacy",
+    //   url: "/privacy",
+    // },
+    // {
+    //   name: "Imprint",
+    //   url: "/imprint",
+    // },
   ],
 }

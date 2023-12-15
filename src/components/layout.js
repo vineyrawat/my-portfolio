@@ -31,7 +31,8 @@ const StyledLayoutWrapper = styled.div`
 const Layout = ({ children }) => {
   const { isIntroDone } = useContext(Context).state
   // Enables dark mode if the user's OS has an active dark theme
-  const darkModeEnabled = useDarkMode()
+  // const darkModeEnabled = useDarkMode()
+  const darkModeEnabled = false
   const theme = darkModeEnabled ? darkTheme : lightTheme
 
   return (
@@ -40,9 +41,15 @@ const Layout = ({ children }) => {
         <GlobalStyle />
         {isIntroDone ? (
           <>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+              rel="stylesheet"
+            ></link>
             <Header />
             <main id="main-content">{children}</main>
-            <Footer />
+            {/* <Footer /> */}
           </>
         ) : (
           <SplashScreen />
