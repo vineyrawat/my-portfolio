@@ -202,7 +202,7 @@ const StyledProject = styled(motion.div)`
 const Projects = ({ content }) => {
   const { darkMode } = useContext(Context).state
   const sectionDetails = content[0].node
-  const projects = content.slice(1, content.length)
+  const projects = [content.slice(1, content.length)[0]]
 
   // visibleProject is needed to show which project is currently
   // being viewed in the horizontal slider on mobile and tablet
